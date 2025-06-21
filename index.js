@@ -85,7 +85,7 @@ try {
 
 })
 
-app.listen(port ,async()=>{
+app.listen(process.env.port ,async()=>{
  try {
     await connection
     console.log("connected to mongodb")
@@ -93,5 +93,5 @@ app.listen(port ,async()=>{
     console.log("unable to connect to mongodb")
     console.log(error)
  }
- console.log(`server is running on port ${port}`)
+ console.log(`server is running on port ${process.env.port}`)
 })

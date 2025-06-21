@@ -10,7 +10,7 @@ require('dotenv').config()
 //      }
 // }
 // const connection=mongoose.connect("mongodb://127.0.0.1:27017/metaUsers")
-const connection=mongoose.connect(mongoURL)
+const connection=mongoose.connect(process.env.mongoURL)
 
 
 
